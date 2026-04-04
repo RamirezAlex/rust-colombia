@@ -22,6 +22,10 @@ title = "Rust Colombia"
 description = "The largest Rust community in Colombia"
 generate_feeds = true
 feed_filenames = ["rss.xml"]
+taxonomies = [{name = "tags"}]
+
+[[taxonomies]]
+name = "tags"
 
 [slugify]
 paths = "on"

@@ -7,6 +7,40 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://ramirezalex.github.io/rust-colombia/en/rss.xml" rel="self" type="application/rss+xml"/>
-      
+      <lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>We&#x27;re launching rustcolombia.org 🦀</title>
+          <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://ramirezalex.github.io/rust-colombia/en/blog/lanzamos-rustcolombia-org/</link>
+          <guid>https://ramirezalex.github.io/rust-colombia/en/blog/lanzamos-rustcolombia-org/</guid>
+          <description xml:base="https://ramirezalex.github.io/rust-colombia/en/blog/lanzamos-rustcolombia-org/">&lt;p&gt;Today we officially launch the Rust Colombia website, the new digital home of our community.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;why-a-website&quot;&gt;Why a website?&lt;&#x2F;h2&gt;
+&lt;p&gt;Since 2023 we&#x27;ve grown to over 320 members, organized hackathons, technical meetups, and talks at Universidad EAFIT in Medellín. Until now we coordinated between Meetup, Discord, and social media. It was time to have a central place to find everything: upcoming events, past talks, how to propose a talk, and how to sponsor.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;built-with-zola&quot;&gt;Built with Zola&lt;&#x2F;h2&gt;
+&lt;p&gt;Being a Rust community, choosing the stack was easy. The site is built with &lt;strong&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;, a static site generator written in Rust.&lt;&#x2F;p&gt;
+&lt;p&gt;Why Zola?&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Written in Rust&lt;&#x2F;strong&gt; — on-brand for us&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Single binary&lt;&#x2F;strong&gt; — no Node.js, Ruby, or Python dependencies&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Fast&lt;&#x2F;strong&gt; — the entire site compiles in under 10ms&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Simple&lt;&#x2F;strong&gt; — Markdown for content, Tera templates, built-in Sass&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Bilingual&lt;&#x2F;strong&gt; — native i18n support (Spanish and English)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The site is fully static, deployed on GitHub Pages with a GitHub Actions workflow, and the source code is open source.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-can-you-find&quot;&gt;What can you find?&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Events&lt;&#x2F;strong&gt; — our next hackathon and past meetups&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Propose a talk&lt;&#x2F;strong&gt; — no matter your level, we want to hear from you&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Chapters&lt;&#x2F;strong&gt; — Medellín active, your city next?&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Sponsors&lt;&#x2F;strong&gt; — companies supporting the community&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Dark and light mode&lt;&#x2F;strong&gt; — because Rustaceans have preferences too&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;what-s-next&quot;&gt;What&#x27;s next?&lt;&#x2F;h2&gt;
+&lt;p&gt;We&#x27;re working on expanding the community to more cities in Colombia, bringing more speakers, and continuing to create spaces to learn Rust together.&lt;&#x2F;p&gt;
+&lt;p&gt;If you want to participate: &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;discord.gg&#x2F;FqJEwbmE&quot;&gt;join our Discord&lt;&#x2F;a&gt;, &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;forms.gle&#x2F;S8MrXGXPbFeGqsfN9&quot;&gt;propose a talk&lt;&#x2F;a&gt;, or simply attend the next event ready to learn.&lt;&#x2F;p&gt;
+&lt;p&gt;See you at the next meetup. 🦀&lt;&#x2F;p&gt;
+</description>
+      </item>
     </channel>
 </rss>

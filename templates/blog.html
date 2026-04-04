@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Blog — {{ config.title }}{% endblock %}
+
+{% block content %}
+<section class="blog-list">
+    <div class="blog-list__inner">
+        <h1>Blog</h1>
+        {% if paginator %}
+        {% set pages = paginator.pages %}
+        {% else %}
+        {% set pages = section.pages %}
+        {% endif %}
+        {% for page in pages %}
+        <a href="{{ page.permalink }}" class="blog-post-card">
+            <span class="blog-post-card__date">{{ page.date | date(format="%B %d, %Y") }}</span>
+            <h2>{{ page.title }}</h2>
+            <p>{{ page.description }}</p>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

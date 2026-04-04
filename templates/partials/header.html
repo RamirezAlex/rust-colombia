@@ -6,7 +6,7 @@
         </a>
         <nav class="header__nav">
             <a href="#eventos">{% if lang == "en" %}Events{% else %}Eventos{% endif %}</a>
-            <!-- <a href="#blog">Blog</a> -->
+            <a href="{{ get_url(path='blog') }}">Blog</a>
             <a href="#comunidad">{% if lang == "en" %}Community{% else %}Comunidad{% endif %}</a>
             <a href="#capitulos">{% if lang == "en" %}Chapters{% else %}Capítulos{% endif %}</a>
             <div class="lang-switcher">

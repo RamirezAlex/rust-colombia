@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanzamos rustcolombia.org 🦀 — Rust Colombia</title>
+    <meta name="description" content="La comunidad de Rust más grande de Colombia">
+    <link rel="stylesheet" href="https://ramirezalex.github.io/rust-colombia/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="header">
+    <div class="header__inner">
+        <a href="https://ramirezalex.github.io/rust-colombia" class="header__logo">
+            <img src="https://ramirezalex.github.io/rust-colombia/ferris-logo.png" alt="Ferris" class="header__logo-icon">
+            <span class="header__logo-text">Rust Colombia</span>
+        </a>
+        <nav class="header__nav">
+            <a href="#eventos">Eventos</a>
+            <a href="https://ramirezalex.github.io/rust-colombia/blog">Blog</a>
+            <a href="#comunidad">Comunidad</a>
+            <a href="#capitulos">Capítulos</a>
+            <div class="lang-switcher">
+                <a href="https://ramirezalex.github.io/rust-colombia" class="lang-switcher__btn lang-switcher__btn--active">ES</a>
+                <a href="https://ramirezalex.github.io/rust-colombia/en" class="lang-switcher__btn ">EN</a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <svg class="theme-toggle__icon theme-toggle__icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                <svg class="theme-toggle__icon theme-toggle__icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <a href="https:&#x2F;&#x2F;www.meetup.com&#x2F;rust-medellin&#x2F;" target="_blank" class="btn btn--primary btn--sm">
+                Únete
+            </a>
+        </nav>
+    </div>
+</header>
+
+    
+<article class="blog-article">
+    <div class="blog-article__inner">
+        <a href="https://ramirezalex.github.io/rust-colombia/blog" class="blog-article__back">← Blog</a>
+        <span class="blog-article__date">April 04, 2026</span>
+        <h1>Lanzamos rustcolombia.org 🦀</h1>
+        <div class="blog-article__content">
+            <p>Hoy lanzamos oficialmente el sitio web de Rust Colombia, el nuevo hogar digital de nuestra comunidad.</p>
+<h2 id="por-que-un-sitio-web">¿Por qué un sitio web?</h2>
+<p>Desde 2023 hemos crecido a más de 320 miembros, organizado hackathons, meetups técnicos y charlas en la Universidad EAFIT en Medellín. Hasta ahora nos coordinábamos entre Meetup, Discord y redes sociales. Era hora de tener un punto central donde encontrar todo: próximos eventos, charlas pasadas, cómo proponer una charla y cómo patrocinar.</p>
+<h2 id="construido-con-zola">Construido con Zola</h2>
+<p>Siendo una comunidad de Rust, elegir el stack fue fácil. El sitio está construido con <strong><a rel="external" href="https://www.getzola.org/">Zola</a></strong>, un generador de sitios estáticos escrito en Rust.</p>
+<p>¿Por qué Zola?</p>
+<ul>
+<li><strong>Escrito en Rust</strong> — on-brand para nosotros</li>
+<li><strong>Un solo binario</strong> — sin dependencias de Node.js, Ruby o Python</li>
+<li><strong>Rápido</strong> — el sitio completo se compila en menos de 10ms</li>
+<li><strong>Simple</strong> — Markdown para contenido, plantillas Tera, Sass integrado</li>
+<li><strong>Bilingüe</strong> — soporte nativo para i18n (español e inglés)</li>
+</ul>
+<p>El sitio es completamente estático, se despliega en GitHub Pages con un workflow de GitHub Actions, y el código fuente es open source.</p>
+<h2 id="que-puedes-encontrar">¿Qué puedes encontrar?</h2>
+<ul>
+<li><strong>Eventos</strong> — nuestro próximo hackathon y los meetups pasados</li>
+<li><strong>Proponer una charla</strong> — no importa tu nivel, queremos escucharte</li>
+<li><strong>Capítulos</strong> — Medellín activo, ¿tu ciudad próximamente?</li>
+<li><strong>Patrocinadores</strong> — empresas que apoyan la comunidad</li>
+<li><strong>Modo oscuro y claro</strong> — porque los Rustaceans también tienen preferencias</li>
+</ul>
+<h2 id="que-sigue">¿Qué sigue?</h2>
+<p>Estamos trabajando en expandir la comunidad a más ciudades de Colombia, traer más speakers y seguir creando espacios donde aprender Rust juntos.</p>
+<p>Si quieres participar: <a rel="external" href="https://discord.gg/FqJEwbmE">únete a nuestro Discord</a>, <a rel="external" href="https://forms.gle/S8MrXGXPbFeGqsfN9">propón una charla</a>, o simplemente asiste al próximo evento con ganas de aprender.</p>
+<p>Nos vemos en el próximo meetup. 🦀</p>
+
+        </div>
+    </div>
+</article>
+
+    <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__top">
+            <div class="footer__brand">
+                <span class="footer__logo"><img src="https://ramirezalex.github.io/rust-colombia/ferris-logo.png" alt="Ferris" style="width:24px;height:auto;vertical-align:middle;margin-right:6px;">Rust Colombia</span>
+                <p class="footer__tagline">Aprende, comparte y construye con Rust</p>
+            </div>
+            <div class="footer__links">
+                <div class="footer__col">
+                    <h4>Comunidad</h4>
+                    <a href="https:&#x2F;&#x2F;www.meetup.com&#x2F;rust-medellin&#x2F;" target="_blank">Meetup</a>
+                    <a href="https://discord.gg/FqJEwbmE" target="_blank">Discord</a>
+                    <a href="https://github.com/RamirezAlex/rust-colombia" target="_blank">GitHub</a>
+                </div>
+                <div class="footer__col">
+                    <h4>Eventos</h4>
+                    <a href="https:&#x2F;&#x2F;luma.com&#x2F;mvpjxeqh" target="_blank">Próximo evento</a>
+                    <a href="#eventos">Eventos pasados</a>
+                    <a href="https://lu.ma" target="_blank">Luma</a>
+                </div>
+                <div class="footer__col">
+                    <h4>Social</h4>
+                    <a href="https://x.com/RustMedellin" target="_blank">Twitter / X</a>
+                    <a href="https://www.linkedin.com/company/rust-colombia/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__divider"></div>
+        <div class="footer__bottom">
+            <span>© 2023–2026 Rust Colombia. Hecho con 🦀 en Medellín.</span>
+            <span>Construido con Zola</span>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Theme toggle
+        const toggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        const saved = localStorage.getItem('theme');
+        if (saved) html.setAttribute('data-theme', saved);
+
+        if (toggle) {
+            toggle.addEventListener('click', () => {
+                const current = html.getAttribute('data-theme');
+                const next = current === 'dark' ? 'light' : 'dark';
+                html.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
+            });
+        }
+    </script>
+</body>
+</html>

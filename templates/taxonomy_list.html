@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}{{ taxonomy.name | title }} — {{ config.title }}{% endblock %}
+
+{% block content %}
+<section class="blog-list">
+    <div class="blog-list__inner">
+        <h1>{{ taxonomy.name | title }}</h1>
+        {% for term in terms %}
+        <a href="{{ term.permalink }}" class="blog-post-card">
+            <h2>{{ term.name }}</h2>
+            <p>{{ term.pages | length }} {% if lang == "en" %}posts{% else %}artículos{% endif %}</p>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
