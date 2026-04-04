@@ -4,7 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{{ config.title }}{% endblock %}</title>
-    <meta name="description" content="{% if lang == 'en' %}The largest Rust community in Colombia{% else %}{{ config.description }}{% endif %}">
+    {% set description = "La comunidad de Rust más grande de Colombia" %}
+    {% if lang == "en" %}{% set description = "The largest Rust community in Colombia" %}{% endif %}
+    <meta name="description" content="{{ description }}">
+    <link rel="icon" type="image/png" href="{{ get_url(path='favicon.png') }}">
+    <link rel="canonical" href="{{ current_url }}">
+    <link rel="alternate" hreflang="es" href="{{ config.base_url }}/">
+    <link rel="alternate" hreflang="en" href="{{ config.base_url }}/en/">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ config.title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:url" content="{{ current_url }}">
+    <meta property="og:image" content="{{ get_url(path='ferris-logo.png') }}">
+    <meta property="og:locale" content="{% if lang == 'en' %}en_US{% else %}es_CO{% endif %}">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@RustMedellin">
+    <meta name="twitter:title" content="{{ config.title }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:image" content="{{ get_url(path='ferris-logo.png') }}">
     <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

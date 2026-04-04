@@ -5,7 +5,7 @@
 {% block content %}
 <article class="blog-article">
     <div class="blog-article__inner">
-        <a href="{{ get_url(path='blog') }}" class="blog-article__back">← Blog</a>
+        <a href="{% if lang == 'en' %}{{ get_url(path='/en/blog/') }}{% else %}{{ get_url(path='blog') }}{% endif %}" class="blog-article__back">← Blog</a>
         <span class="blog-article__date">{{ page.date | date(format="%B %d, %Y") }}</span>
         <h1>{{ page.title }}</h1>
         <div class="blog-article__content">

@@ -1,12 +1,12 @@
 <header class="header">
     <div class="header__inner">
-        <a href="{{ get_url(path='/') }}" class="header__logo">
+        <a href="{% if lang == 'en' %}{{ get_url(path='/en/') }}{% else %}{{ get_url(path='/') }}{% endif %}" class="header__logo">
             <img src="{{ get_url(path='ferris-logo.png') }}" alt="Ferris" class="header__logo-icon">
             <span class="header__logo-text">Rust Colombia</span>
         </a>
         <nav class="header__nav">
             <a href="#eventos">{% if lang == "en" %}Events{% else %}Eventos{% endif %}</a>
-            <a href="{{ get_url(path='blog') }}">Blog</a>
+            <a href="{% if lang == 'en' %}{{ get_url(path='/en/blog/') }}{% else %}{{ get_url(path='blog') }}{% endif %}">Blog</a>
             <a href="#comunidad">{% if lang == "en" %}Community{% else %}Comunidad{% endif %}</a>
             <a href="#capitulos">{% if lang == "en" %}Chapters{% else %}Capítulos{% endif %}</a>
             <div class="lang-switcher">
