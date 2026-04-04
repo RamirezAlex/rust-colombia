@@ -167,7 +167,7 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
   padding: 100px 40px;
 
-  &__inner { max-width: 900px; margin: 0 auto; }
+  &__inner { max-width: 720px; margin: 0 auto; }
 
   h1 {
     font-size: clamp(40px, 6vw, 72px);
@@ -635,7 +635,7 @@ a { color: inherit; text-decoration: none; }
   min-height: 60vh;
 
   &__inner {
-    max-width: 900px;
+    max-width: 720px;
     margin: 0 auto;
     h1 { font-size: 42px; font-weight: 700; margin-bottom: 40px; }
   }
@@ -658,7 +658,7 @@ a { color: inherit; text-decoration: none; }
   background: var(--bg-primary);
   padding: 100px 40px 80px;
 
-  &__inner { max-width: 900px; margin: 0 auto; }
+  &__inner { max-width: 720px; margin: 0 auto; }
 
   &__back {
     display: inline-block;
