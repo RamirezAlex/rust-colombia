@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust Colombia</title>
+    <meta name="description" content="La comunidad de Rust más grande de Colombia">
+    <link rel="stylesheet" href="https://rustcolombia.org/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="header">
+    <div class="header__inner">
+        <a href="https://rustcolombia.org" class="header__logo">
+            <img src="https://rustcolombia.org/ferris-logo.png" alt="Ferris" class="header__logo-icon">
+            <span class="header__logo-text">Rust Colombia</span>
+        </a>
+        <nav class="header__nav">
+            <a href="#eventos">Eventos</a>
+            <!-- <a href="#blog">Blog</a> -->
+            <a href="#comunidad">Comunidad</a>
+            <a href="#capitulos">Capítulos</a>
+            <div class="lang-switcher">
+                <a href="https://rustcolombia.org" class="lang-switcher__btn lang-switcher__btn--active">ES</a>
+                <a href="https://rustcolombia.org/en" class="lang-switcher__btn ">EN</a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <svg class="theme-toggle__icon theme-toggle__icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                <svg class="theme-toggle__icon theme-toggle__icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <a href="https:&#x2F;&#x2F;www.meetup.com&#x2F;rust-medellin&#x2F;" target="_blank" class="btn btn--primary btn--sm">
+                Únete
+            </a>
+        </nav>
+    </div>
+</header>
+
+    
+<!-- Hero -->
+<section class="hero">
+    <div class="hero__inner">
+        <div class="badge">
+            <span class="badge__dot"></span>
+            Comunidad Rust en Colombia 🇨🇴
+        </div>
+        <h1>Aprende, comparte y construye con Rust</h1>
+        <p class="hero__sub">Somos la comunidad de Rust más grande de Colombia. Meetups, hackathons y charlas técnicas para todos los niveles.</p>
+        <div class="hero__ctas">
+            <a href="https:&#x2F;&#x2F;luma.com&#x2F;mvpjxeqh" target="_blank" class="btn btn--primary">Próximo Evento →</a>
+            <a href="#comunidad" class="btn btn--ghost">Conoce más</a>
+        </div>
+    </div>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+    <div class="stats__inner">
+        <div class="stat">
+            <span class="stat__number">328+</span>
+            <span class="stat__label">Miembros</span>
+        </div>
+        <div class="stat">
+            <span class="stat__number">10+</span>
+            <span class="stat__label">Eventos</span>
+        </div>
+        <div class="stat">
+            <span class="stat__number">1</span>
+            <span class="stat__label">Capítulo</span>
+        </div>
+        <div class="stat">
+            <span class="stat__number">2023</span>
+            <span class="stat__label">Desde</span>
+        </div>
+    </div>
+</section>
+
+<!-- Next Event -->
+<section class="next-event" id="eventos">
+    <div class="next-event__inner">
+        <div class="badge badge--yellow">
+            <span class="badge__dot badge__dot--yellow"></span>
+            Próximo Evento
+        </div>
+        <div class="event-card">
+            <div class="event-card__left">
+                <span class="event-card__date">Abril 11, 2026 · 10:00 AM — 2:00 PM</span>
+                <h2>Rust Hackathon — Snakear 🐍🦀</h2>
+                <p>¡Distributed Snake Challenge! Construye un juego multijugador de Snake en Rust. Explora networking, estado de juego y sincronización en tiempo real.</p>
+                <div class="event-card__meta">
+                    <span>📍 Universidad EAFIT, Medellín</span>
+                    <span>👥 40 cupos · Gratis</span>
+                </div>
+                <a href="https:&#x2F;&#x2F;luma.com&#x2F;mvpjxeqh" target="_blank" class="btn btn--yellow">Regístrate en Luma →</a>
+            </div>
+            <div class="event-card__right">
+                <img src="https://rustcolombia.org/snake-crab.png" alt="Snake & Crab" class="event-card__emoji">
+                <span class="event-card__tagline">Distributed Snake<br>Challenge</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="comunidad">
+    <div class="about__inner">
+        <div class="about__text">
+            <span class="section-tag">SOBRE NOSOTROS</span>
+            <h2>La comunidad de Rust más activa de Colombia</h2>
+            <p>Desde 2023, conectamos entusiastas, expertos y amantes de Rust para compartir conocimiento sobre sistemas operativos, sistemas embebidos, IoT, desarrollo web y blockchain. Nos reunimos para aprender, hacer networking y disfrutar de pizzas y cervezas.</p>
+        </div>
+        <div class="about__cards">
+            <div class="feature-card">
+                <div class="feature-card__icon feature-card__icon--orange">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <div class="feature-card__text">
+                    <h3>Meetups Técnicos</h3>
+                    <p>Charlas sobre Rust, desde lo básico hasta temas avanzados</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card__icon feature-card__icon--yellow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 7 7 7 7"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C17 4 17 7 17 7"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                </div>
+                <div class="feature-card__text">
+                    <h3>Hackathons</h3>
+                    <p>Desafíos prácticos para construir proyectos reales en Rust</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card__icon feature-card__icon--blue">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="feature-card__text">
+                    <h3>Networking</h3>
+                    <p>Pizzas, cervezas y conexiones con la comunidad tech</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Past Events -->
+<section class="past-events">
+    <div class="past-events__inner">
+        <span class="section-tag">EVENTOS ANTERIORES</span>
+        <h2>Lo que hemos construido juntos</h2>
+        <div class="events-grid">
+            <div class="event-tile">
+                <div class="event-tile__top event-tile__top--red">
+                    <span>Mar 2025</span>
+                </div>
+                <div class="event-tile__body">
+                    <h3>Multithreading y Terminal User Interfaces con Rust</h3>
+                    <span>29 asistentes</span>
+                </div>
+            </div>
+            <div class="event-tile">
+                <div class="event-tile__top event-tile__top--yellow">
+                    <span>Feb 2025</span>
+                </div>
+                <div class="event-tile__body">
+                    <h3>Introducción a Rust y Novedades en 2025</h3>
+                    <span>44 asistentes</span>
+                </div>
+            </div>
+            <div class="event-tile">
+                <div class="event-tile__top event-tile__top--blue">
+                    <span>Jan 2024</span>
+                </div>
+                <div class="event-tile__body">
+                    <h3>Embedded Systems Primer with Rust</h3>
+                    <span>37 asistentes</span>
+                </div>
+            </div>
+            <div class="event-tile">
+                <div class="event-tile__top event-tile__top--orange">
+                    <span>Nov 2023</span>
+                </div>
+                <div class="event-tile__body">
+                    <h3>Rust REST APIs</h3>
+                    <span>17 asistentes</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Chapters -->
+<section class="chapters" id="capitulos">
+    <div class="chapters__inner">
+        <span class="section-tag">CAPÍTULOS</span>
+        <h2>Presencia en Colombia</h2>
+        <div class="chapters__grid">
+            <div class="chapter-card chapter-card--active">
+                <div class="chapter-card__icon">📍</div>
+                <h3>Medellín</h3>
+                <p>Nuestro capítulo principal. Nos reunimos en la Universidad EAFIT para meetups mensuales, hackathons y charlas técnicas.</p>
+                <div class="chapter-card__status">
+                    <span class="chapter-card__dot"></span>
+                    Activo
+                </div>
+            </div>
+            <div class="chapter-card chapter-card--placeholder">
+                <div class="chapter-card__icon">➕</div>
+                <h3>¿Tu ciudad?</h3>
+                <p>¿Quieres abrir un capítulo de Rust en tu ciudad? Contáctanos y te ayudamos a comenzar.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Submit a Talk -->
+<section class="submit-talk">
+    <div class="submit-talk__inner">
+        <div class="submit-talk__left">
+            <span class="section-tag section-tag--yellow">COMPARTE TU CONOCIMIENTO</span>
+            <h2>¿Tienes algo que compartir? Propón una charla</h2>
+            <p>No importa tu nivel de experiencia. Si estás aprendiendo Rust, construyendo algo interesante, o tienes experiencia en producción — queremos escucharte. Todas las charlas son bienvenidas.</p>
+            <a href="https://forms.gle/S8MrXGXPbFeGqsfN9" target="_blank" class="btn btn--yellow">Proponer Charla →</a>
+        </div>
+        <div class="submit-talk__right">
+            <div class="talk-card">
+                <div class="talk-card__icon talk-card__icon--yellow">🎓</div>
+                <div class="talk-card__text">
+                    <h4>Nivel Principiante</h4>
+                    <p>Tu viaje aprendiendo Rust, errores y aprendizajes</p>
+                </div>
+            </div>
+            <div class="talk-card">
+                <div class="talk-card__icon talk-card__icon--orange">💻</div>
+                <div class="talk-card__text">
+                    <h4>Proyecto Técnico</h4>
+                    <p>Demo de algo que estés construyendo con Rust</p>
+                </div>
+            </div>
+            <div class="talk-card">
+                <div class="talk-card__icon talk-card__icon--blue">🏢</div>
+                <div class="talk-card__text">
+                    <h4>Rust en Producción</h4>
+                    <p>Casos reales de Rust en empresas y startups</p>
+                </div>
+            </div>
+            <div class="talk-card">
+                <div class="talk-card__icon talk-card__icon--green">💡</div>
+                <div class="talk-card__text">
+                    <h4>Lightning Talk (10 min)</h4>
+                    <p>Comparte una idea, tip, o librería rápidamente</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sponsors -->
+<section class="sponsors">
+    <div class="sponsors__inner">
+        <span class="section-tag">PATROCINADORES</span>
+        <h2>Empresas que apoyan a Rust Colombia</h2>
+        <p class="sponsors__sub">Gracias a nuestros patrocinadores por hacer posible esta comunidad</p>
+        <div class="sponsor-tier">
+            <span class="sponsor-tier__label sponsor-tier__label--gold">GOLD</span>
+            <div class="sponsor-tier__logos">
+                <div class="sponsor-logo sponsor-logo--gold">Tu Logo Aquí</div>
+                <div class="sponsor-logo sponsor-logo--gold">Tu Logo Aquí</div>
+            </div>
+        </div>
+        <div class="sponsor-tier">
+            <span class="sponsor-tier__label sponsor-tier__label--silver">SILVER</span>
+            <div class="sponsor-tier__logos">
+                <a href="https://www.instagram.com/nodo.eafit/" target="_blank" class="sponsor-logo sponsor-logo--silver sponsor-logo--real"><img src="https://rustcolombia.org/nodo-eafit.jpg" alt="Nodo EAFIT"></a>
+                <div class="sponsor-logo sponsor-logo--silver">Tu Logo Aquí</div>
+                <div class="sponsor-logo sponsor-logo--silver">Tu Logo Aquí</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Become a Sponsor -->
+<section class="become-sponsor">
+    <div class="become-sponsor__inner">
+        <div class="become-sponsor__left">
+            <span class="section-tag section-tag--yellow">PATROCINA</span>
+            <h2>Impulsa el ecosistema Rust en Colombia</h2>
+            <p>Tu empresa puede ser parte del crecimiento de la comunidad Rust en Latinoamérica. Conecta con talento, posiciona tu marca y apoya la educación tech en Colombia.</p>
+            <a href="mailto:rustmedellin@gmail.com?subject=Sponsorship%20-%20Rust%20Colombia" class="btn btn--yellow">Quiero Patrocinar →</a>
+        </div>
+        <div class="become-sponsor__right">
+            <div class="benefit-card">
+                <div class="benefit-card__icon benefit-card__icon--yellow">👁</div>
+                <div class="benefit-card__text">
+                    <h4>Visibilidad de marca</h4>
+                    <p>Logo en website, eventos, redes sociales y materiales</p>
+                </div>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon benefit-card__icon--orange">👥</div>
+                <div class="benefit-card__text">
+                    <h4>Acceso a talento</h4>
+                    <p>Conecta con desarrolladores Rust de toda Colombia</p>
+                </div>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon benefit-card__icon--blue">🎤</div>
+                <div class="benefit-card__text">
+                    <h4>Espacio para charlas</h4>
+                    <p>Presenta tu producto o tecnología en nuestros eventos</p>
+                </div>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon benefit-card__icon--green">💚</div>
+                <div class="benefit-card__text">
+                    <h4>Impacto social</h4>
+                    <p>Apoya la educación tech y el open source en Colombia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final-cta">
+    <div class="final-cta__inner">
+        <h2>¿Listo para oxidarte? 🦀</h2>
+        <p>Únete a la comunidad Rust más vibrante de Colombia. Todos los niveles son bienvenidos.</p>
+        <div class="final-cta__btns">
+            <a href="https:&#x2F;&#x2F;www.meetup.com&#x2F;rust-medellin&#x2F;" target="_blank" class="btn btn--primary">Únete al Meetup →</a>
+            <a href="https://discord.gg/FqJEwbmE" target="_blank" class="btn btn--ghost">Discord</a>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__top">
+            <div class="footer__brand">
+                <span class="footer__logo"><img src="https://rustcolombia.org/ferris-logo.png" alt="Ferris" style="width:24px;height:auto;vertical-align:middle;margin-right:6px;">Rust Colombia</span>
+                <p class="footer__tagline">Aprende, comparte y construye con Rust</p>
+            </div>
+            <div class="footer__links">
+                <div class="footer__col">
+                    <h4>Comunidad</h4>
+                    <a href="https:&#x2F;&#x2F;www.meetup.com&#x2F;rust-medellin&#x2F;" target="_blank">Meetup</a>
+                    <a href="https://discord.gg/FqJEwbmE" target="_blank">Discord</a>
+                    <a href="https://github.com/RustColombia" target="_blank">GitHub</a>
+                </div>
+                <div class="footer__col">
+                    <h4>Eventos</h4>
+                    <a href="https:&#x2F;&#x2F;luma.com&#x2F;mvpjxeqh" target="_blank">Próximo evento</a>
+                    <a href="#eventos">Eventos pasados</a>
+                    <a href="https://lu.ma" target="_blank">Luma</a>
+                </div>
+                <div class="footer__col">
+                    <h4>Social</h4>
+                    <a href="https://x.com/RustMedellin" target="_blank">Twitter / X</a>
+                    <a href="https://www.linkedin.com/company/rust-colombia/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__divider"></div>
+        <div class="footer__bottom">
+            <span>© 2025 Rust Colombia. Hecho con 🦀 en Medellín.</span>
+            <span>Construido con Zola</span>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Theme toggle
+        const toggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        const saved = localStorage.getItem('theme');
+        if (saved) html.setAttribute('data-theme', saved);
+
+        if (toggle) {
+            toggle.addEventListener('click', () => {
+                const current = html.getAttribute('data-theme');
+                const next = current === 'dark' ? 'light' : 'dark';
+                html.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
+            });
+        }
+    </script>
+</body>
+</html>

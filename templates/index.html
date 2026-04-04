@@ -1,0 +1,297 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero -->
+<section class="hero">
+    <div class="hero__inner">
+        <div class="badge">
+            <span class="badge__dot"></span>
+            {% if lang == "en" %}Rust Community in Colombia 🇨🇴{% else %}Comunidad Rust en Colombia 🇨🇴{% endif %}
+        </div>
+        <h1>{% if lang == "en" %}Learn, share and build with Rust{% else %}Aprende, comparte y construye con Rust{% endif %}</h1>
+        <p class="hero__sub">{% if lang == "en" %}We are the largest Rust community in Colombia. Meetups, hackathons, and technical talks for all levels.{% else %}Somos la comunidad de Rust más grande de Colombia. Meetups, hackathons y charlas técnicas para todos los niveles.{% endif %}</p>
+        <div class="hero__ctas">
+            <a href="{{ config.extra.luma_url }}" target="_blank" class="btn btn--primary">{% if lang == "en" %}Next Event →{% else %}Próximo Evento →{% endif %}</a>
+            <a href="#comunidad" class="btn btn--ghost">{% if lang == "en" %}Learn more{% else %}Conoce más{% endif %}</a>
+        </div>
+    </div>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+    <div class="stats__inner">
+        <div class="stat">
+            <span class="stat__number">328+</span>
+            <span class="stat__label">{% if lang == "en" %}Members{% else %}Miembros{% endif %}</span>
+        </div>
+        <div class="stat">
+            <span class="stat__number">10+</span>
+            <span class="stat__label">{% if lang == "en" %}Events{% else %}Eventos{% endif %}</span>
+        </div>
+        <div class="stat">
+            <span class="stat__number">1</span>
+            <span class="stat__label">{% if lang == "en" %}Chapter{% else %}Capítulo{% endif %}</span>
+        </div>
+        <div class="stat">
+            <span class="stat__number">2023</span>
+            <span class="stat__label">{% if lang == "en" %}Since{% else %}Desde{% endif %}</span>
+        </div>
+    </div>
+</section>
+
+<!-- Next Event -->
+<section class="next-event" id="eventos">
+    <div class="next-event__inner">
+        <div class="badge badge--yellow">
+            <span class="badge__dot badge__dot--yellow"></span>
+            {% if lang == "en" %}Next Event{% else %}Próximo Evento{% endif %}
+        </div>
+        <div class="event-card">
+            <div class="event-card__left">
+                <span class="event-card__date">{% if lang == "en" %}April 11, 2026 · 10:00 AM — 2:00 PM{% else %}Abril 11, 2026 · 10:00 AM — 2:00 PM{% endif %}</span>
+                <h2>Rust Hackathon — Snakear 🐍🦀</h2>
+                <p>{% if lang == "en" %}Distributed Snake Challenge! Build a multiplayer Snake game in Rust. Explore networking, game state, and real-time synchronization.{% else %}¡Distributed Snake Challenge! Construye un juego multijugador de Snake en Rust. Explora networking, estado de juego y sincronización en tiempo real.{% endif %}</p>
+                <div class="event-card__meta">
+                    <span>📍 Universidad EAFIT, Medellín</span>
+                    <span>👥 {% if lang == "en" %}40 spots · Free{% else %}40 cupos · Gratis{% endif %}</span>
+                </div>
+                <a href="{{ config.extra.luma_url }}" target="_blank" class="btn btn--yellow">{% if lang == "en" %}Register on Luma →{% else %}Regístrate en Luma →{% endif %}</a>
+            </div>
+            <div class="event-card__right">
+                <img src="{{ get_url(path='snake-crab.png') }}" alt="Snake & Crab" class="event-card__emoji">
+                <span class="event-card__tagline">Distributed Snake<br>Challenge</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="comunidad">
+    <div class="about__inner">
+        <div class="about__text">
+            <span class="section-tag">{% if lang == "en" %}ABOUT US{% else %}SOBRE NOSOTROS{% endif %}</span>
+            <h2>{% if lang == "en" %}The most active Rust community in Colombia{% else %}La comunidad de Rust más activa de Colombia{% endif %}</h2>
+            <p>{% if lang == "en" %}Since 2023, we connect enthusiasts, experts, and Rust lovers to share knowledge about operating systems, embedded systems, IoT, web development, and blockchain. We gather to learn, network, and enjoy pizzas and beers.{% else %}Desde 2023, conectamos entusiastas, expertos y amantes de Rust para compartir conocimiento sobre sistemas operativos, sistemas embebidos, IoT, desarrollo web y blockchain. Nos reunimos para aprender, hacer networking y disfrutar de pizzas y cervezas.{% endif %}</p>
+        </div>
+        <div class="about__cards">
+            <div class="feature-card">
+                <div class="feature-card__icon feature-card__icon--orange">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <div class="feature-card__text">
+                    <h3>{% if lang == "en" %}Technical Meetups{% else %}Meetups Técnicos{% endif %}</h3>
+                    <p>{% if lang == "en" %}Talks about Rust, from basics to advanced topics{% else %}Charlas sobre Rust, desde lo básico hasta temas avanzados{% endif %}</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card__icon feature-card__icon--yellow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 7 7 7 7"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C17 4 17 7 17 7"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                </div>
+                <div class="feature-card__text">
+                    <h3>Hackathons</h3>
+                    <p>{% if lang == "en" %}Hands-on challenges to build real projects in Rust{% else %}Desafíos prácticos para construir proyectos reales en Rust{% endif %}</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card__icon feature-card__icon--blue">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="feature-card__text">
+                    <h3>Networking</h3>
+                    <p>{% if lang == "en" %}Pizzas, beers and connections with the tech community{% else %}Pizzas, cervezas y conexiones con la comunidad tech{% endif %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Past Events -->
+<section class="past-events">
+    <div class="past-events__inner">
+        <span class="section-tag">{% if lang == "en" %}PAST EVENTS{% else %}EVENTOS ANTERIORES{% endif %}</span>
+        <h2>{% if lang == "en" %}What we've built together{% else %}Lo que hemos construido juntos{% endif %}</h2>
+        <div class="events-grid">
+            <div class="event-tile">
+                <div class="event-tile__top event-tile__top--red">
+                    <span>Mar 2025</span>
+                </div>
+                <div class="event-tile__body">
+                    <h3>Multithreading y Terminal User Interfaces con Rust</h3>
+                    <span>29 {% if lang == "en" %}attendees{% else %}asistentes{% endif %}</span>
+                </div>
+            </div>
+            <div class="event-tile">
+                <div class="event-tile__top event-tile__top--yellow">
+                    <span>Feb 2025</span>
+                </div>
+                <div class="event-tile__body">
+                    <h3>{% if lang == "en" %}Rust Introduction and 2025 Updates{% else %}Introducción a Rust y Novedades en 2025{% endif %}</h3>
+                    <span>44 {% if lang == "en" %}attendees{% else %}asistentes{% endif %}</span>
+                </div>
+            </div>
+            <div class="event-tile">
+                <div class="event-tile__top event-tile__top--blue">
+                    <span>Jan 2024</span>
+                </div>
+                <div class="event-tile__body">
+                    <h3>Embedded Systems Primer with Rust</h3>
+                    <span>37 {% if lang == "en" %}attendees{% else %}asistentes{% endif %}</span>
+                </div>
+            </div>
+            <div class="event-tile">
+                <div class="event-tile__top event-tile__top--orange">
+                    <span>Nov 2023</span>
+                </div>
+                <div class="event-tile__body">
+                    <h3>Rust REST APIs</h3>
+                    <span>17 {% if lang == "en" %}attendees{% else %}asistentes{% endif %}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Chapters -->
+<section class="chapters" id="capitulos">
+    <div class="chapters__inner">
+        <span class="section-tag">{% if lang == "en" %}CHAPTERS{% else %}CAPÍTULOS{% endif %}</span>
+        <h2>{% if lang == "en" %}Presence in Colombia{% else %}Presencia en Colombia{% endif %}</h2>
+        <div class="chapters__grid">
+            <div class="chapter-card chapter-card--active">
+                <div class="chapter-card__icon">📍</div>
+                <h3>Medellín</h3>
+                <p>{% if lang == "en" %}Our main chapter. We meet at Universidad EAFIT for monthly meetups, hackathons, and tech talks.{% else %}Nuestro capítulo principal. Nos reunimos en la Universidad EAFIT para meetups mensuales, hackathons y charlas técnicas.{% endif %}</p>
+                <div class="chapter-card__status">
+                    <span class="chapter-card__dot"></span>
+                    {% if lang == "en" %}Active{% else %}Activo{% endif %}
+                </div>
+            </div>
+            <div class="chapter-card chapter-card--placeholder">
+                <div class="chapter-card__icon">➕</div>
+                <h3>{% if lang == "en" %}Your city?{% else %}¿Tu ciudad?{% endif %}</h3>
+                <p>{% if lang == "en" %}Want to open a Rust chapter in your city? Contact us and we'll help you get started.{% else %}¿Quieres abrir un capítulo de Rust en tu ciudad? Contáctanos y te ayudamos a comenzar.{% endif %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Submit a Talk -->
+<section class="submit-talk">
+    <div class="submit-talk__inner">
+        <div class="submit-talk__left">
+            <span class="section-tag section-tag--yellow">{% if lang == "en" %}SHARE YOUR KNOWLEDGE{% else %}COMPARTE TU CONOCIMIENTO{% endif %}</span>
+            <h2>{% if lang == "en" %}Have something to share? Propose a talk{% else %}¿Tienes algo que compartir? Propón una charla{% endif %}</h2>
+            <p>{% if lang == "en" %}No matter your experience level. If you're learning Rust, building something interesting, or have production experience — we want to hear from you. All talks are welcome.{% else %}No importa tu nivel de experiencia. Si estás aprendiendo Rust, construyendo algo interesante, o tienes experiencia en producción — queremos escucharte. Todas las charlas son bienvenidas.{% endif %}</p>
+            <a href="https://forms.gle/S8MrXGXPbFeGqsfN9" target="_blank" class="btn btn--yellow">{% if lang == "en" %}Propose a Talk →{% else %}Proponer Charla →{% endif %}</a>
+        </div>
+        <div class="submit-talk__right">
+            <div class="talk-card">
+                <div class="talk-card__icon talk-card__icon--yellow">🎓</div>
+                <div class="talk-card__text">
+                    <h4>{% if lang == "en" %}Beginner Level{% else %}Nivel Principiante{% endif %}</h4>
+                    <p>{% if lang == "en" %}Your journey learning Rust, mistakes and lessons{% else %}Tu viaje aprendiendo Rust, errores y aprendizajes{% endif %}</p>
+                </div>
+            </div>
+            <div class="talk-card">
+                <div class="talk-card__icon talk-card__icon--orange">💻</div>
+                <div class="talk-card__text">
+                    <h4>{% if lang == "en" %}Technical Project{% else %}Proyecto Técnico{% endif %}</h4>
+                    <p>{% if lang == "en" %}Demo of something you're building with Rust{% else %}Demo de algo que estés construyendo con Rust{% endif %}</p>
+                </div>
+            </div>
+            <div class="talk-card">
+                <div class="talk-card__icon talk-card__icon--blue">🏢</div>
+                <div class="talk-card__text">
+                    <h4>{% if lang == "en" %}Rust in Production{% else %}Rust en Producción{% endif %}</h4>
+                    <p>{% if lang == "en" %}Real cases of Rust in companies and startups{% else %}Casos reales de Rust en empresas y startups{% endif %}</p>
+                </div>
+            </div>
+            <div class="talk-card">
+                <div class="talk-card__icon talk-card__icon--green">💡</div>
+                <div class="talk-card__text">
+                    <h4>Lightning Talk (10 min)</h4>
+                    <p>{% if lang == "en" %}Share an idea, tip, or library quickly{% else %}Comparte una idea, tip, o librería rápidamente{% endif %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sponsors -->
+<section class="sponsors">
+    <div class="sponsors__inner">
+        <span class="section-tag">{% if lang == "en" %}SPONSORS{% else %}PATROCINADORES{% endif %}</span>
+        <h2>{% if lang == "en" %}Companies that support Rust Colombia{% else %}Empresas que apoyan a Rust Colombia{% endif %}</h2>
+        <p class="sponsors__sub">{% if lang == "en" %}Thanks to our sponsors for making this community possible{% else %}Gracias a nuestros patrocinadores por hacer posible esta comunidad{% endif %}</p>
+        <div class="sponsor-tier">
+            <span class="sponsor-tier__label sponsor-tier__label--gold">GOLD</span>
+            <div class="sponsor-tier__logos">
+                <div class="sponsor-logo sponsor-logo--gold">{% if lang == "en" %}Your Logo Here{% else %}Tu Logo Aquí{% endif %}</div>
+                <div class="sponsor-logo sponsor-logo--gold">{% if lang == "en" %}Your Logo Here{% else %}Tu Logo Aquí{% endif %}</div>
+            </div>
+        </div>
+        <div class="sponsor-tier">
+            <span class="sponsor-tier__label sponsor-tier__label--silver">SILVER</span>
+            <div class="sponsor-tier__logos">
+                <a href="https://www.instagram.com/nodo.eafit/" target="_blank" class="sponsor-logo sponsor-logo--silver sponsor-logo--real"><img src="{{ get_url(path='nodo-eafit.jpg') }}" alt="Nodo EAFIT"></a>
+                <div class="sponsor-logo sponsor-logo--silver">{% if lang == "en" %}Your Logo Here{% else %}Tu Logo Aquí{% endif %}</div>
+                <div class="sponsor-logo sponsor-logo--silver">{% if lang == "en" %}Your Logo Here{% else %}Tu Logo Aquí{% endif %}</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Become a Sponsor -->
+<section class="become-sponsor">
+    <div class="become-sponsor__inner">
+        <div class="become-sponsor__left">
+            <span class="section-tag section-tag--yellow">{% if lang == "en" %}SPONSOR{% else %}PATROCINA{% endif %}</span>
+            <h2>{% if lang == "en" %}Power the Rust ecosystem in Colombia{% else %}Impulsa el ecosistema Rust en Colombia{% endif %}</h2>
+            <p>{% if lang == "en" %}Your company can be part of the Rust community growth in Latin America. Connect with talent, position your brand, and support tech education in Colombia.{% else %}Tu empresa puede ser parte del crecimiento de la comunidad Rust en Latinoamérica. Conecta con talento, posiciona tu marca y apoya la educación tech en Colombia.{% endif %}</p>
+            <a href="mailto:rustmedellin@gmail.com?subject=Sponsorship%20-%20Rust%20Colombia" class="btn btn--yellow">{% if lang == "en" %}I Want to Sponsor →{% else %}Quiero Patrocinar →{% endif %}</a>
+        </div>
+        <div class="become-sponsor__right">
+            <div class="benefit-card">
+                <div class="benefit-card__icon benefit-card__icon--yellow">👁</div>
+                <div class="benefit-card__text">
+                    <h4>{% if lang == "en" %}Brand Visibility{% else %}Visibilidad de marca{% endif %}</h4>
+                    <p>{% if lang == "en" %}Logo on website, events, social media, and materials{% else %}Logo en website, eventos, redes sociales y materiales{% endif %}</p>
+                </div>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon benefit-card__icon--orange">👥</div>
+                <div class="benefit-card__text">
+                    <h4>{% if lang == "en" %}Talent Access{% else %}Acceso a talento{% endif %}</h4>
+                    <p>{% if lang == "en" %}Connect with Rust developers across Colombia{% else %}Conecta con desarrolladores Rust de toda Colombia{% endif %}</p>
+                </div>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon benefit-card__icon--blue">🎤</div>
+                <div class="benefit-card__text">
+                    <h4>{% if lang == "en" %}Talk Slots{% else %}Espacio para charlas{% endif %}</h4>
+                    <p>{% if lang == "en" %}Present your product or technology at our events{% else %}Presenta tu producto o tecnología en nuestros eventos{% endif %}</p>
+                </div>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon benefit-card__icon--green">💚</div>
+                <div class="benefit-card__text">
+                    <h4>{% if lang == "en" %}Social Impact{% else %}Impacto social{% endif %}</h4>
+                    <p>{% if lang == "en" %}Support tech education and open source in Colombia{% else %}Apoya la educación tech y el open source en Colombia{% endif %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final-cta">
+    <div class="final-cta__inner">
+        <h2>{% if lang == "en" %}Ready to get rusty? 🦀{% else %}¿Listo para oxidarte? 🦀{% endif %}</h2>
+        <p>{% if lang == "en" %}Join the most vibrant Rust community in Colombia. All levels welcome.{% else %}Únete a la comunidad Rust más vibrante de Colombia. Todos los niveles son bienvenidos.{% endif %}</p>
+        <div class="final-cta__btns">
+            <a href="{{ config.extra.meetup_url }}" target="_blank" class="btn btn--primary">{% if lang == "en" %}Join the Meetup →{% else %}Únete al Meetup →{% endif %}</a>
+            <a href="https://discord.gg/FqJEwbmE" target="_blank" class="btn btn--ghost">Discord</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

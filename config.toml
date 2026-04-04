@@ -1,0 +1,27 @@
+base_url = "https://rustcolombia.org"
+title = "Rust Colombia"
+description = "La comunidad de Rust más grande de Colombia"
+default_language = "es"
+compile_sass = true
+generate_feeds = true
+feed_filenames = ["rss.xml"]
+
+[markdown]
+
+[extra]
+logo = "🦀"
+meetup_url = "https://www.meetup.com/rust-medellin/"
+luma_url = "https://luma.com/mvpjxeqh"
+discord_url = "https://discord.gg/FqJEwbmE"
+linkedin_url = "https://www.linkedin.com/company/rust-colombia/"
+twitter_url = "https://x.com/RustMedellin"
+github_url = "https://github.com/RustColombia"
+
+[languages.en]
+title = "Rust Colombia"
+description = "The largest Rust community in Colombia"
+generate_feeds = true
+feed_filenames = ["rss.xml"]
+
+[slugify]
+paths = "on"

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Rust Colombia</title>
+      <link>https://rustcolombia.org</link>
+      <description>The largest Rust community in Colombia</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://rustcolombia.org/en/rss.xml" rel="self" type="application/rss+xml"/>
+      
+    </channel>
+</rss>
