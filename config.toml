@@ -15,7 +15,7 @@ luma_url = "https://luma.com/mvpjxeqh"
 discord_url = "https://discord.gg/FqJEwbmE"
 linkedin_url = "https://www.linkedin.com/company/rust-colombia/"
 twitter_url = "https://x.com/RustMedellin"
-github_url = "https://github.com/RustColombia"
+github_url = "https://github.com/RamirezAlex/rust-colombia"
 
 [languages.en]
 title = "Rust Colombia"

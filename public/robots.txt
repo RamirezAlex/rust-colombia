@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://rustcolombia.org/sitemap.xml
+Sitemap: https://ramirezalex.github.io/rust-colombia/sitemap.xml
