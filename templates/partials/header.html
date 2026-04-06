@@ -5,10 +5,11 @@
             <span class="header__logo-text">Rust Colombia</span>
         </a>
         <nav class="header__nav">
-            <a href="#eventos">{% if lang == "en" %}Events{% else %}Eventos{% endif %}</a>
+            {% set home = get_url(path='/') %}{% if lang == 'en' %}{% set home = get_url(path='/en/') %}{% endif %}
+            <a href="{{ home }}#eventos">{% if lang == "en" %}Events{% else %}Eventos{% endif %}</a>
             <a href="{% if lang == 'en' %}{{ get_url(path='/en/blog/') }}{% else %}{{ get_url(path='blog') }}{% endif %}">Blog</a>
-            <a href="#comunidad">{% if lang == "en" %}Community{% else %}Comunidad{% endif %}</a>
-            <a href="#capitulos">{% if lang == "en" %}Chapters{% else %}Capítulos{% endif %}</a>
+            <a href="{{ home }}#comunidad">{% if lang == "en" %}Community{% else %}Comunidad{% endif %}</a>
+            <a href="{{ home }}#capitulos">{% if lang == "en" %}Chapters{% else %}Capítulos{% endif %}</a>
             <div class="lang-switcher">
                 <a href="{{ get_url(path='/') }}" class="lang-switcher__btn {% if lang == 'es' %}lang-switcher__btn--active{% endif %}">ES</a>
                 <a href="{{ get_url(path='/en/') }}" class="lang-switcher__btn {% if lang == 'en' %}lang-switcher__btn--active{% endif %}">EN</a>
