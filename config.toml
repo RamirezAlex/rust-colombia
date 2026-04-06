@@ -1,4 +1,4 @@
-base_url = "https://ramirezalex.github.io/rust-colombia"
+base_url = "https://rustcolombia.org"
 title = "Rust Colombia"
 description = "La comunidad de Rust más grande de Colombia"
 default_language = "es"
