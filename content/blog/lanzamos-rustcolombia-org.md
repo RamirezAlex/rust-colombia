@@ -1,6 +1,6 @@
 +++
 title = "Lanzamos rustcolombia.org 🦀"
-date = 2026-04-04
+date = 2026-04-07
 description = "Hoy lanzamos oficialmente el sitio web de Rust Colombia, construido con Zola."
 [taxonomies]
 tags = ["comunidad", "anuncio"]
